@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GithubMetrics</title>
+    <title>LeetMetric</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,31 +19,41 @@
 
        <div class="stats-container">
            <div class="progress">
-            <div class="progress-item circle">
-                <div class="easy-progress">
-                    <span id="easy-label">Easy</span>
-                </div>
-            </div>
-            <div class="progress-item circle">
-                  <div class="medium-progress">
-                    <span id="medium-label">Medium</span>
-                </div>
-            </div>
-            <div class="progress-item circle">
-                  <div class="hard-progress">
-                    <span id="hard-label">Hard</span>
-                </div>
-            </div>
+               <div class="progress-item circle" id="easy-progress">
+                   <span>Easy</span>
+                   <div id="easy-label">0/0</div>
+               </div>
+               <div class="progress-item circle" id="medium-progress">
+                   <span>Medium</span>
+                   <div id="medium-label">0/0</div>
+               </div>
+               <div class="progress-item circle" id="hard-progress">
+                   <span>Hard</span>
+                   <div id="hard-label">0/0</div>
+               </div>
            </div>
 
-        <div class="stats-card">
-            <!-- Directly populate card here from the JS code -->
-        </div>
-
+           <!-- Stats Card -->
+           <div class="stats-card">
+               <h2>Overall Stats</h2>
+               <div class="card-item">
+                 <div>
+                 <p><strong>Total Solved:</strong> <span id="total-solved">0</span> / <span id="total-questions">0</span></p>
+               </div>
+              <div>
+                 <p><strong>Acceptance Rate:</strong> <span id="acceptance-rate">0%</span></p>
+              </div>
+              <div><p><strong>Ranking:</strong> <span id="ranking">N/A</span></p>
+              </div>
+              <div><p><strong>Reputation:</strong> <span id="reputation">0</span></p>
+              </div>
+               </div>
+              
+               
+           </div>
        </div>
     </div>
 
-
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
